@@ -1,11 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓</title>
-</head>
-<body>
+<script language="JavaScript">
+<!-- 
+var space = " ";
+var speed = "33";
+var pos = 0;
+var msg = "┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛";
+function Scroll()
+{
+document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
+pos++;
+if (pos > msg.length) pos = 0;
+window.setTimeout("Scroll()", speed);
+}
+Scroll();
+-->
+</script>
 
-<p>BOOM.</p>
-
-</body>
-</html>
+BOOM.
